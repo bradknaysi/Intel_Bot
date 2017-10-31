@@ -1,4 +1,24 @@
 # Intel_Bot
 Developer: Bradley knaysi (bak9cu@virginia.edu)
 
-The program is a slack chatbot created for the retrieval of emerging threats IDS rules. This data resides on the webpage: http://rules.emergingthreats.net/blockrules/. The site consists of a collection of Snort and Suricata rules files that can be used for alerting or blocking. Running the SlackBot can be done by installing the botkit-starter-slack which can be found at https://github.com/howdyai/botkit-starter-slack. By placing the chatBot.js file in the botkit-starter-slack folder which (after completeing botkit-starter-slack installations) will be located in the computer's 'Users' folder (the 'Users' name will be dependent on the Computer your using). Using the 'token' variable in the chatBot.js file, you can then connect the bot to a slack page by navagating to the slack workspace's app Directory (https://your-slack-workspace.slack.com/apps), then navagating to the 'Manage' page (located at the top of the page). Next clicking on the 'Custom Integrations' tab, then clicking the 'bots' tab. Finally you can click the big green 'Add Configuration' button and create a username for the bot... I used 'intelligence'. On the following page, the 'API Token' setting can be changed to the 'token' variable in my chatBot.js. Once Saved, the user can open up both the slack workspace (https://your-slack-workspace.slack.com/messages) and a terminal on your computer. In the terminal navigate to your botkit-starter-slack folder in the directory (most likely enter command 'cd botkit-starter-slack') then enter in the command (node chatBot.js) to run the file. Going back to your slack workspace, you should now be able to type in the chat '@intelligence help' to see available commands. Note that '@intellegence' depends on the username you gave your slackbot during the 'Add Configuration' step.
+The program is a slack chatbot created for the retrieval of emerging threats IDS rules. This data resides on the webpage: http://rules.emergingthreats.net/blockrules/. The site consists of a collection of Snort and Suricata rules files that can be used for alerting or blocking. 
+
+Directions for integrating chatBot.js into a Slack Workspace...
+
+1) Running the SlackBot can be done by installing the botkit-starter-slack kit, which can be found at https://github.com/howdyai/botkit-starter-slack. Installing botkit directions under 'Install Botkit' section of the page!
+
+2) Place the chatBot.js file in the botkit-starter-slack folder (which after completeing the botkit-starter-slack installation) will be located in the computer's 'Users' folder (Note: the 'Users' folder name will be dependent on the user logged in on your computer). 
+
+3) Connect the bot to a slack page by navagating to your slack workspace's app directory (https://your-slack-workspace.slack.com/apps), then navagating to the 'Manage' page (located at the top of the page). 
+
+4) Next clicking on the 'Custom Integrations' tab, then click the 'bots' tab. 
+
+5) Finally you can click the big green 'Add Configuration' button and create a username for the bot (I used 'intelligence'). On the following page, change the 'API Token' setting to the 'token' variable in chatBot.js. 
+
+6) Once Saved, the user can open up both the slack workspace (https://your-slack-workspace.slack.com/messages) and a terminal window on your computer. 
+
+7) In the terminal, navigate to your botkit-starter-slack folder in the directory (most likely enter command 'cd botkit-starter-slack') then enter in the command (node chatBot.js) to run the file. 
+
+8) Going back to your slack workspace, you should now be able to type in the chat '@intelligence help' to see available commands. Note that '@intellegence' depends on the username you gave your slackbot during the 'Add Configuration' step.
+
+NOTE: When asking the chatBot for information, always use the '@intellegence' (or @ whatever username you gave the bot) in the message.
