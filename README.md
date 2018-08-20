@@ -1,7 +1,10 @@
 # Intel_Bot
-Developer: Bradley knaysi (bak9cu@virginia.edu)
+Developer: Bradley knaysi 
+Email: bak9cu@virginia.edu
 
-The program is a slack chatbot created for the retrieval of emerging threats IDS rules. This data resides on the webpage: http://rules.emergingthreats.net/blockrules/. The site consists of a collection of Snort and Suricata rules files that can be used for alerting or blocking. 
+Purpose: Create a Slack chatbot to retrieve Threat Intelligence data. 
+
+Technical: Coded in JavaScript (Node.js) with the cheerio API. Coded search and parse methods to traverse web file databases. Coded methods to send data to chatbot on a Slack page, along with methods to read user text and react.
 
 Directions for integrating chatBot.js into a Slack Workspace...
 
